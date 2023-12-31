@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootsrtap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+     <!-- body font -->
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row g-0 ">
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="inputs">
+                            <h1>sign up here</h1>
+                            <div class="name">
+                                <input oninput="checkUserNameSignValidation()" id="nameInputSign" class="form-control" type="text" placeholder="enter your name">
+                                <div class="rulesNSign">
+                                    <p>your name should have from 3 to 10 charcters without spicial charcters</p>
+                                   </div>
+                                   <div class="successNSign">
+                                    <p>successfuly vaild </p>
+                                   </div>
+                            </div>
+                            <div class="email">
+                                <input oninput="checkEmailSignValidation()" id="emailSign" class="form-control" type="email" placeholder="enter your Email">
+                                <div class="rulesSign">
+                                    <p>your E-mail should have from 6 to 8 charcters ,"@", gmail or yahoo only and don`t forget ".com"</p>
+                                   </div>
+                                   <div class="successSign">
+                                    <p>successfuly vaild </p>
+                                   </div>
+                            </div>
+                            <div class="passwordSign">
+                            <input oninput="checkPasswordSignValidation()" id="passwordSign" class="form-control" type="password" placeholder="enter your password">
+                            <div class="rules2Sign">
+                                <p>your password must be 9 numbers only</p>
+                               </div>
+                               <div class="success2Sign">
+                                <p>successfuly vaild </p>
+                               </div>
+                            </div>
+                            
+                            <button class="form-control" id="btnLogINSign">sign up</button>
+                            <div class="text">
+                                <p>don you have an account? <a href="index.html">log in</a></p>
+                            </div>
+                            <svg hidden>
+                                <filter id="wavy">
+                                    <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+                                </filter>
+                            </svg>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+      <!-- sweet alert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- js -->
+    <script src="js/signUp.js"></script>
+</body>
+</html>

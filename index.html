@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootsrtap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-sm-12">
+                            <div class="inputs needs-validation">
+                                <h1>welcome !</h1>
+                                
+                                <h6 class="text-center mb-5">please log in to access your home page</h6>
+                                <div id="inputCss">
+                                    <div class="email">
+                                        <input oninput="checkEmailValidation()" placeholder="enter your email"
+                                            class="form-control" id="email" type="email" required>
+                                        <div class="rules">
+                                            <p>your E-mail should have from 6 to 8 charcters ,"@", gmail or yahoo only and don`t
+                                                forget ".com"</p>
+                                        </div>
+                                        <div class="success">
+                                            <p>successfuly vaild </p>
+                                        </div>
+                                    </div>
+                                    <div class="password">
+                                        <input oninput="checkPasswordValidation()" class="form-control" id="password"
+                                            placeholder="enter your password" type="password" required>
+                                        <div class="rules2">
+                                            <p>your password must be 9 numbers only</p>
+                                        </div>
+                                        <div class="success2">
+                                            <p>successfuly vaild </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="btnLogIN" type="button" class="form-control">log in</button>
+                                <button class="form-control d-none" id="hiddenBtn" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">log in</button>
+                                <div class="text">
+                                    <p>don`t have an account? <a href="signUp.html">signUp</a></p>
+                                </div>
+                                <svg hidden>
+                                    <filter id="wavy">
+                                        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feTurbulence>
+                                        <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+                                    </filter>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

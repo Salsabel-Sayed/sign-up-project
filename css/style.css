@@ -1,0 +1,141 @@
+body{
+    background-image: url(../imgs/a20.jfif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    background-color: #e0e9df;
+    font-size: 25px;
+}
+
+.inputs h1{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: rgb(114, 143, 114);
+    font-weight: 700;
+}
+.inputs h6{
+    font-size: 27px;
+    font-weight: 600;
+    color: rgb(114, 143, 114);
+    font-family: 'Caveat', cursive;
+}
+.text p{
+    text-align: center;
+    margin-top: 12%;
+    color: beige;
+    font-weight: 900;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Caveat', cursive;
+}
+.text p::before{
+    content: '';
+    position: absolute;
+    background-color: darkseagreen;
+    top: -7px;
+    left: 15%;
+    width: 70%;
+    height: 120%;
+    border: 4px solid darkseagreen;
+    filter: url(#wavy);
+    z-index: -1;
+}
+.text p a{
+    color: white;
+    text-decoration:underline;
+    transition: .3s;
+    font-family: 'Caveat', cursive;
+}
+.text p a:hover{
+    text-decoration:underline;
+}
+.rules,.rules2{
+    color: darkred;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+    font-family: 'Caveat', cursive;
+}
+.rules p,.rules2 p{
+    margin-bottom: -0.5rem;
+    font-family: 'Caveat', cursive;
+}
+.success,.success2{
+    color: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+    font-family: 'Caveat', cursive;
+}
+.success p,.success2 p{
+    margin-bottom: -0.5rem;
+    font-family: 'Caveat', cursive;
+}
+.container{
+    margin-block: 2%;
+    width: 50%;
+}
+.img{
+    width: 100%;
+    
+}
+.img img{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    
+}
+input{
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 0 9px 4px inset #738d7342;
+}
+.form-control{
+    background-color: #f7f6ea80;
+    outline: #464b2d;
+    font-size: 20px;
+    
+}
+button.form-control{
+    font-size: 26px;
+    color: rgb(114, 143, 114);
+    font-weight: 600;
+    box-shadow: 0 0 15px 4px #738d7342;
+    font-family: 'Caveat', cursive;
+
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #e0e8d1;
+    border: 1px solid #e0e8d1;
+    background-color: #eaeee0;
+}
+.inputs{
+    backdrop-filter: blur(20px);
+    padding: 7%;
+    border-radius:90px 0 90px 90px;
+    box-shadow: 0 0 20px 0px #adb197;
+    cursor: pointer;
+}
+.email,.password{
+    margin-bottom: 6%;
+}
+@media screen and (max-width:1200px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    body{
+        height: 98.5vh;
+    }
+
+    
+}
+
+
+

@@ -1,0 +1,117 @@
+body{
+    background-image: url(../imgs/a20.jfif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    font-size: 25px;
+}
+.inputs{
+    backdrop-filter: blur(20px);
+    padding: 7%;
+    border-radius:90px 0 90px 90px;
+    box-shadow: 0 0 20px 0px #92908f;
+}
+.container{
+    margin-block: 2%;
+    width: 50%;
+}
+.inputs h1{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: #679c5f;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.text p{
+    text-align: center;
+    margin-top: 12%;
+    color: beige;
+    font-weight: 900;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Caveat', cursive;
+}
+.text p::before{
+    content: '';
+    position: absolute;
+    background-color: darkseagreen;
+    top: -7px;
+    left: 30%;
+    width: 40%;
+    height: 120%;
+    border: 4px solid darkseagreen;
+    filter: url(#wavy);
+    z-index: -1;
+}
+.text p a{
+    color: white;
+    text-decoration:underline;
+    transition: .3s;
+    font-family: 'Caveat', cursive;
+}
+.text p a:hover{
+    text-decoration:underline;
+}
+
+input{
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 0 9px 4px inset #738d7342;
+    font-family: 'Caveat', cursive;
+}
+.form-control{
+    background-color: #f7f6ea80;
+    outline: #464b2d;
+    font-size: 20px;
+    
+}
+button.form-control{
+    font-size: 26px;
+    color: #679c5f;
+    font-weight: 600;
+    box-shadow: 0 0 15px 4px #738d7342;
+    font-family: 'Caveat', cursive;
+
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #e0e8d1;
+    border: 1px solid #e0e8d1;
+    background-color: #eaeee0;
+}
+
+.emailSign,.passwordSign{
+    margin-bottom: 3%;
+    font-family: 'Caveat', cursive;
+}
+.rulesNSign,.rules2Sign,.rulesSign{
+    color: darkred;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+    font-family: 'Caveat', cursive;
+}
+.successNSign,.success2Sign,.successSign{
+    color: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+    font-family: 'Caveat', cursive;
+}
+@media screen and (max-width:1200px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    body{
+        height: 98.5vh;
+    }
+    .text p::before{
+        width: 55%;
+    } 
+}
